@@ -1,10 +1,12 @@
 package com.nemrosim.repositories;
 
 import com.nemrosim.models.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository("userRepository")
 public class HibernateUserRepositoryImpl implements UserRepository {
 
     @Override
