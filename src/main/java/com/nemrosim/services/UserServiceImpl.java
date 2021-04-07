@@ -9,6 +9,10 @@ public class UserServiceImpl implements UserService {
 
     private UserRepository repository;
 
+    public UserServiceImpl(UserRepository repository) {
+        this.repository = repository;
+    }
+
     @Override
     public List<User> findAll() {
         return repository.findAll();
